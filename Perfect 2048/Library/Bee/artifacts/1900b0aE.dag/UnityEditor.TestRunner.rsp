@@ -118,6 +118,10 @@
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -r:"D:/GitHub/IT-4080C-001-Final-Project/Perfect 2048/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll"
+-r:"D:/GitHub/IT-4080C-001-Final-Project/Perfect 2048/Library/PackageCache/com.unity.nuget.mono-cecil@1.10.1/Mono.Cecil.dll"
+-r:"D:/GitHub/IT-4080C-001-Final-Project/Perfect 2048/Library/PackageCache/com.unity.nuget.mono-cecil@1.10.1/Mono.Cecil.Mdb.dll"
+-r:"D:/GitHub/IT-4080C-001-Final-Project/Perfect 2048/Library/PackageCache/com.unity.nuget.mono-cecil@1.10.1/Mono.Cecil.Pdb.dll"
+-r:"D:/GitHub/IT-4080C-001-Final-Project/Perfect 2048/Library/PackageCache/com.unity.nuget.mono-cecil@1.10.1/Mono.Cecil.Rocks.dll"
 -r:"D:/Unity Hub/2021.3.8f1/Editor/Data/Managed/UnityEditor.Graphs.dll"
 -r:"D:/Unity Hub/2021.3.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
 -r:"D:/Unity Hub/2021.3.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.DeviceSimulatorModule.dll"

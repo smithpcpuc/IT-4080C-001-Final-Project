@@ -9,9 +9,24 @@ public class GameManager : NetworkBehaviour
 
     void Update()
     {
-        RemainingTime.Value -= Time.deltaTime;
+        if (IsHost)
+        {
+            RemainingTime.Value -= Time.deltaTime;
+            Debug.Log("Host time changed");
+            Debug.Log(RemainingTime.Value);
+        }
+
+        if (IsClient)
+        {
+            RemainingTime.OnValueChanged += ClientOnTimeChanged;
+        }
+
+    }
+
+    private void ClientOnTimeChanged(float previous, float current)
+    {
+        Debug.Log("Client time changed");
         Debug.Log(RemainingTime.Value);
     }
-    
- 
+
 }

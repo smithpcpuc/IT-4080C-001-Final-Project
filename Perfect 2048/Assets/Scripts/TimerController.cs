@@ -3,8 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Unity.Netcode;
 
-public class TimerController : MonoBehaviour
+
+public class TimerController : NetworkBehaviour
 {
     public static TimerController instance;
 
@@ -22,7 +24,7 @@ public class TimerController : MonoBehaviour
 
     private void Start()
     {
-        timeCounter.text = "Time: 00:00.00";
+        timeCounter.text = "Time: 00:00";
         timerGoing = false;
     }
 
@@ -45,7 +47,7 @@ public class TimerController : MonoBehaviour
         {
             elapsedTime += Time.deltaTime;
             timePlaying = TimeSpan.FromSeconds(elapsedTime);
-            string timePlayingStr = "Time: " + timePlaying.ToString("mm':'ss'.'ff");
+            string timePlayingStr = "Time: " + timePlaying.ToString("mm':'ss'");
             timeCounter.text = timePlayingStr;
 
             yield return null;

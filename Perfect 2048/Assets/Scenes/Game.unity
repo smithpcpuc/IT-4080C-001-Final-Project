@@ -159,7 +159,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.042052332, g: 0.4101421, b: 0.4245283, a: 0}
+  m_BackGroundColor: {r: 0.33333334, g: 0.38431373, b: 0.4392157, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -200,7 +200,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 24036712}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 39.35, y: 19.39, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -268,7 +268,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 764587630}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 249, y: 226, z: 597}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -286,6 +286,7 @@ GameObject:
   - component: {fileID: 1344241932}
   - component: {fileID: 1344241931}
   - component: {fileID: 1344241933}
+  - component: {fileID: 1344241934}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -313,7 +314,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1344241930}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 212.92702, y: 89.053505, z: -6.696128}
+  m_LocalPosition: {x: 548, y: 252, z: -6.696128}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -336,6 +337,34 @@ MonoBehaviour:
   AlwaysReplicateAsRoot: 0
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
+--- !u!114 &1344241934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344241930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d09f8f3737f69b41b365188d6f9fe79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _width: 4
+  _height: 4
+  _nodePrefab: {fileID: 2903230958556459855, guid: 0717b7a1fa5b2534d959b52312e75b29, type: 3}
+  _blockPrefab: {fileID: 0}
+  _boardPrefab: {fileID: 7934406863823811077, guid: 5d8042e8759c72e459087c5f3529f822, type: 3}
+  _types: []
+  _travelTime: 0.2
+  _winCondition: 2048
+  _mergeEffectPrefab: {fileID: 0}
+  _floatingTextPrefab: {fileID: 0}
+  _winScreen: {fileID: 0}
+  _loseScreen: {fileID: 0}
+  _winScreenText: {fileID: 0}
+  _moveClips: []
+  _matchClips: []
+  _source: {fileID: 0}
 --- !u!1001 &4551603817148524891
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -343,6 +372,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1389417016259850298, guid: 3c6be22b8a1a8ec48bd9f1c9395dee55, type: 3}
+      propertyPath: m_text
+      value: Reach for 2048
+      objectReference: {fileID: 0}
+    - target: {fileID: 1389417016259850298, guid: 3c6be22b8a1a8ec48bd9f1c9395dee55, type: 3}
+      propertyPath: m_margin.x
+      value: -75.8542
+      objectReference: {fileID: 0}
+    - target: {fileID: 2460461234973643525, guid: 3c6be22b8a1a8ec48bd9f1c9395dee55, type: 3}
+      propertyPath: GlobalObjectIdHash
+      value: 2699473194
+      objectReference: {fileID: 0}
     - target: {fileID: 2516018350766359445, guid: 3c6be22b8a1a8ec48bd9f1c9395dee55, type: 3}
       propertyPath: m_Name
       value: TimerCanvas
